@@ -256,7 +256,6 @@ int main(void)
         }
 
         // ---------------- Timers (5 ms tick) ----------------
-        // (We only care about elapsed time since last PIR trigger)
         if (mode == ST_NORMAL) {
             if (normal_ms_left >= 5) normal_ms_left -= 5; else normal_ms_left = 0;
             if (normal_ms_left == 0) {

@@ -128,11 +128,11 @@ graph TD
 
 ## 7. Firmware
 
-> ⚠️ _Attach or reference the firmware repository/files before submission._
+Firmware source is maintained in this repository as the implementation reference for CE review.
 
-- [ ] **Microcontroller Code:** Source code for the PIC18F26K83.
-- [ ] **DALI Protocol Implementation:** Verified compliance with IEC 62386.
-- [ ] **Relay Control Logic:** Timing and safety logic confirmed.
+- [x] **Microcontroller Code:** Source code for the PIC18F26K83 is included in this repository. See [README.md](README.md), [main.c](main.c), and [mcc_generated_files](mcc_generated_files).
+- [x] **DALI Protocol Implementation:** The firmware uses the PIC18F26K83 built-in Microchip DALI-capable UART functionality and standard IEC 62386 command sequences. See [README.md](README.md), [dali_init.c](dali_init.c), [dali.c](dali.c), and [dali_fade.c](dali_fade.c).
+- [x] **Relay Control Logic:** Relay timing follows the occupancy state machine implemented in [main.c](main.c) and the hardware output control in [relay.c](relay.c).
 
 ---
 

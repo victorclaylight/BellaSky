@@ -59,7 +59,7 @@ graph TD
     B --> C[15V DC Output]
     C --> D[Microcontroller<br>PIC18F26K83<br>Preprogrammed Show Logic]
     D -->|DALI Control| E[7x DALI Outputs<br>Wieland BST14I2L]
-    D -->|Relay Control| F[Relay<br>Songle SRD-12VDC-SL-C<br>230VAC Output<br>Wieland GST18I4L]
+    D -->|Relay Control| F[Relay<br>Songle SRD-05VDC-SL-C<br>230VAC Output<br>Wieland GST18I4L]
     D -->|Light Intensity| G[2x Phoenix Connectors<br>Light-Intensity Level Control]
     H[PIR Sensor Input<br>Philips Basis Sensor IRM1070<br>RJ11] --> D
     I[4x RTJ11 Input Connectors] --> D
@@ -80,7 +80,7 @@ Schematics (as included in this repository):
 - PIC18F26K83 with DALI, relay, and PIR interfaces.
 
 ### Relay Section
-- Songle SRD series relay for 230VAC switching (verify coil voltage vs BOM/datasheet; see note in [Datasheets](#5-datasheets)).
+- Songle SRD-05VDC-SL-C relay for 230VAC switching.
 
 ### DALI Interface
 - 7x DALI outputs via Wieland BST14I2L connectors.
@@ -140,17 +140,10 @@ These parts are mains-related and/or form the insulation barrier; their datashee
 - [Datasheets/K7805M-1000R3.pdf](Datasheets/K7805M-1000R3.pdf)
 - [Datasheets/LRM8114-00-Datasheet.pdf](Datasheets/LRM8114-00-Datasheet.pdf)
 
-### Relay datasheet note (IMPORTANT)
+### Relay datasheet
 
-The repository currently includes:
-- [Datasheets/SRD-12VDC-SL-C.PDF](Datasheets/SRD-12VDC-SL-C.PDF)
-
-However, the BOM you provided earlier referenced **SRD-05VDC-SL-C**.  
-**Action required:** confirm the actual relay used on the PCB (5V or 12V coil) and ensure:
-- BOM part number  
-- schematic reference  
-- included datasheet  
-are consistent before final CE submission.
+Relay datasheet (as included in this repository):
+- [Datasheets/SRD-05VDC-SL-C.pdf](Datasheets/SRD-05VDC-SL-C.pdf)
 
 ---
 

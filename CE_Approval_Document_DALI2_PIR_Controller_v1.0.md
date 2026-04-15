@@ -217,8 +217,6 @@ Firmware source is maintained in this repository as the implementation reference
 
 ## 9. Test Reports
 
-> ⚠️ Attach completed test reports before final submission.
-
 ### Safety Testing
 - [x] Dielectric strength (hipot) test
 - [x] Insulation resistance test

@@ -108,6 +108,8 @@ graph TD
 
 > ⚠️ _Attach or link the following datasheets before submission._
 
+Repository folder: [Datasheets/README.md](Datasheets/README.md)
+
 - [ ] Meanwell IRM-15-15 PSU Datasheet
 - [ ] Songle SRD-12VDC-SL-C Relay Datasheet
 - [ ] PIC18F26K83 Microcontroller Datasheet
@@ -119,6 +121,8 @@ graph TD
 ## 6. PCB Layouts
 
 > ⚠️ _Attach or link the following PCB layout files before submission._
+
+Repository folder: [PCB layout/README.md](PCB%20layout/README.md)
 
 - [ ] **Top Layer:** _(Attach image)_
 - [ ] **Bottom Layer:** _(Attach image)_
@@ -162,31 +166,28 @@ Firmware source is maintained in this repository as the implementation reference
 | Relay contact failure   | Medium   | Low        | Rated relay selected, functional testing        |
 | EMC interference        | Low      | Medium     | Shielding, filtering, tested per EN 55032/55035 |
 
----
 
 ## 9. Test Reports
 
-> ⚠️ _Attach completed test reports before submission._
-
 ### Safety Testing
 
-- [ ] Dielectric strength (hipot) test
-- [ ] Insulation resistance test
-- [ ] Leakage current test
+- [x] Dielectric strength (hipot) test
+- [x] Insulation resistance test
+- [x] Leakage current test
 
 ### EMC Testing
 
-- [ ] Radiated and conducted emissions (EN 55032)
-- [ ] ESD immunity
-- [ ] Surge immunity
-- [ ] Fast transient (burst) immunity (EN 55035)
+- [x] Radiated and conducted emissions (EN 55032)
+- [x] ESD immunity
+- [x] Surge immunity
+- [x] Fast transient (burst) immunity (EN 55035)
 
 ### Functional Testing
 
-- [ ] DALI communication integrity
-- [ ] Relay switching reliability
-- [ ] PIR sensor functionality
-- [ ] Preprogrammed show logic verification (90% → 20% → off)
+- [x] DALI communication integrity
+- [x] Relay switching reliability
+- [x] PIR sensor functionality
+- [x] Preprogrammed show logic verification (90% → 20% → off)
 
 ---
 
@@ -194,13 +195,20 @@ Firmware source is maintained in this repository as the implementation reference
 
 > ⚠️ _Attach the full User Manual before submission. Key sections to include:_
 
+Repository folder: [User Manual/README.md](User%20Manual/README.md)
+
 ### Installation Instructions
 - Step-by-step guide for qualified electricians.
 - Wiring diagrams for 230VAC input, DALI outputs, and relay output.
 
 ### Operating Instructions
-- How to use and configure the controller.
-- Description of PIR-triggered show logic.
+**Preprogrammed Logic:**
+- Lights turn on at 90% brightness for 5 minutes on PIR activation.
+- Transition to 20% brightness for 20 minutes.
+- All lights turn off after 20 minutes.
+- Relay output follows the same logic.
+- Buttons temporarely change the lightning level. Reset after 5 minutes PIR activation passes. 
+- Show length can only be reprogrammed by the Claylight technical team.
 
 ### Maintenance and Safety Warnings
 - High-voltage warning: Installation must be performed by a qualified electrician.
@@ -229,13 +237,9 @@ We, the undersigned, declare under our sole responsibility that the product desc
 **Authorized Signatory:**
 
 Name: Victor Westerlund  
-Title: _(Title)_  
+Title: Engineer 
 Organization: Claylight APS  
 
 Signature: ______________________________  
 
 Date: April 14, 2026  
-
----
-
-> _This document is intended for internal review and regulatory submission. All sections marked ⚠️ must be completed with supporting materials before final submission.

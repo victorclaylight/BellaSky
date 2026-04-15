@@ -245,21 +245,31 @@ Repository folder: [User_Manual/](User_Manual/)
 User manual entry point:
 - [User_Manual/README.md](User_Manual/README.md)
 
-### Installation Instructions
-- Step-by-step guide for qualified electricians.
-- Wiring diagrams for 230VAC input, DALI outputs, and relay output.
+### Installation instructions (with pictures)
+The following installation/technical guide pictures are included:
 
-### Operating Instructions
+- [User_Manual/Technical Guide 1.jpeg](User_Manual/Technical%20Guide%201.jpeg)
+- [User_Manual/Technical Guide 2.jpeg](User_Manual/Technical%20Guide%202.jpeg)
+- [User_Manual/Technical Guide 3.jpeg](User_Manual/Technical%20Guide%203.jpeg)
+- [User_Manual/Technical Guide 4.jpeg](User_Manual/Technical%20Guide%204.jpeg)
+- [User_Manual/Technical Guide 5.jpeg](User_Manual/Technical%20Guide%205.jpeg)
 
-**Preprogrammed Logic:**
+### Installation summary (for CE technical file)
+- Installation must be performed by a qualified electrician.
+- Wiring includes 230VAC input, DALI outputs, and relay-controlled 230VAC output.
+- Ensure power is disconnected before installing or servicing.
+- Maintain required creepage/clearance and enclosure protection during installation.
+
+### Operating instructions
+**Preprogrammed logic:**
 - Lights turn on at 90% brightness for 5 minutes on PIR activation.
 - Transition to 20% brightness for 20 minutes.
 - All lights turn off after 20 minutes.
 - Relay output follows the same logic.
 - Show length can only be reprogrammed by the Claylight technical team.
 
-### Maintenance and Safety Warnings
-- High-voltage warning: Installation must be performed by a qualified electrician.
+### Maintenance and safety warnings
+- High-voltage warning: installation must be performed by a qualified electrician.
 - Do not open the enclosure when powered.
 - Handling and disposal instructions (RoHS / WEEE compliance).
 
